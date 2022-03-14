@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'AlumniSans-Black';
+  src: url('AlumniSans-Black.eot');
+  src: url('AlumniSans-Black.eot?#iefix') format('embedded-opentype'),
+       url('AlumniSans-Black.svg#AlumniSans-Black') format('svg'),
+       url('AlumniSans-Black.ttf') format('truetype'),
+       url('AlumniSans-Black.woff') format('woff'),
+       url('AlumniSans-Black.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
