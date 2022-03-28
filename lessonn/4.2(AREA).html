@@ -4,21 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AREA</title>
+    <style>
+        .dom{font-weight: bold;
+    color: #00b800;
+        }
+        h1 {
+    font-size: 26px;
+    color: #00b800;
+    margin: 0px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 10px;
+    text-align: center;
+}h2 {
+    font-size: 20px;
+    color: #507550;
+}
+h1, h2, h3, h4 {
+    font-family: verdana, sans-serif;
+}
+a.tryit1 {
+    display: block;
+    color: #FFFFFF;
+    background-color: #339933;
+    font-weight: bold;
+    width: 105px;
+    padding: 3px;
+    border: 1px solid #ffffff;
+    outline: 1px solid #98bf21;
+    text-decoration: none;
+    margin: 10px 0 10px 1px;
+    text-align: center;
+}
+dt {
+    font-size: 18px;
+    margin: 10px 10px 10px 15px;
+    font-weight: bold;
+    color: #E60000;
+}
+    </style>
     
 </head>
 <body>
-    <div >
-               <img src="images/karting.jpg" width="540" height="158" 
-                alt="Навигация по сайту" usemap="#Navigation" ></div>
-        <p><map name="Navigation"> 
-            
-            <area shape="rect" coords="257,5,367,5,257,18,367,18" href="http://kartland.by/news/prokat_news/" alt="Новости">
-            <area shape="rect" coords="400,5,450,5,400,18,400,18" href="http://kartland.by/about/" alt="Услуги">
-            <area shape="rect" coords="555,5,530,5,473,18,406,18" href="http://kartland.by/events/" alt="Календарь">
-            <area shape="rect" coords="652,5,700,5,652,18,700,18" href="http://kartland.by/galery/" alt="Галерея">
-            <area shape="rect" coords="732,5,770,5,732,18,770,18" href="http://kartland.by/sport/" alt="Спорт">
-            <area shape="rect" coords="800,5,860,5,800,18,860,18" href="http://kartland.by/contacts/" alt="Контакты">
-            </map></p>
-</body>
+    <h1>  HTML тег  &lt;area&gt;</h1>
+    <div style="width: 700px; margin: 20px auto;">
+        <h2> Описание</h2>
+   <p> HTML тег &lt;area&gt; определяет активные области на изображении, которые являются ссылками, эти области могут отличаться формой и размером. Картинка (изображение) с активными областями, называется картой-изображением. Такая картинка ничем не отличается от обычной, за исключением того, что содержит активные области (ссылки). Области могут перекрывать друг друга, сверху окажется та, которая в коде располагается первее (выше).</p>
+   <p> Элемент &lt;area&gt; используется только совместно с 
+    <a href="https://puzzleweb.ru/html/tag_map.php">тегом &lt;map&gt;</a>
+    в качестве его дочернего элемента. </p>
+    <h2>Атрибуты</h2>
+    <dl>
+        <dt>alt:</dt>
+        <dd>Определяет альтернативный текст, который будет виден вместо изображения, если оно не может быть отображено (из-за медленной связи, ошибки в атрибуте src и тд).</dd>
+        <dd>Атрибут coords указывает координаты активной области на карте-изображения. Он используется вместе с атрибутом shape для указания размера, формы и размещения активной области. Возможные значения атрибута: </dd>  
+    <ul>
+        <li>
+             <b>x1,y1,x2,y2</b> 
+        <dt>coords:</dt> - указывает координаты верхнего левого и правого нижнего угла прямоугольника (shape="rect").<br>
+        <p style="text-align:center;"><img src="tag area/1.png" width="463" height="300" alt="координаты прямоугольника"></p>
+ </li>
+ <li> 
+    <b>x,y,радиус</b>
+    - определяет координаты центра окружности и радиус (shape="circle"). <br><br>
+    Определение координат для окружности (shape="circle"):		
+    <p style="text-align:center;"><img src="tag area/2.png" width="423" height="300" alt="координаты окружности"></p>
+ </li>
+ <li>
+    <b>x1,y1,x2,y2,...,xn,yn</b>
+    - определяет координаты вершин полигона (многоугольника) (shape="poly").<br>
+    Определение координат для многоугольника (shape="poly"):		
+    <p style="text-align:center;"><img src="tag area/3.png" width="431" height="300" alt="координаты многоугольника"></p>
+ </li>
+    </ul>
+    <p class="prim"><span class="dom">Примечание:</span> координаты верхнего левого угла области - 0,0.</p>
+    <a class="tryit1" href="https://puzzleweb.ru/html/examples/area.php" target="_blank">Пример »</a>
+    </dl>
+    <dt> href:  </dt>
+    Атрибут href указывает адрес страницы, на которую ведет ссылка с активной области изображения, если он не указан или пропущен, то тег &lt;area&gt; не будет являться гиперссылкой. (адрес может быть либо 
+    <a href="https://puzzleweb.ru/html/8_links2.php#a2" target="_blank">абсолютным</a>  либо <a href="https://puzzleweb.ru/html/8_links2.php#a1" target="_blank">относительным</a> )  </dd><br>
+    <dt>hreflang</dt>
+    <dd>Указывает двухбуквенный код языка, определяющий язык страницы, доступной по ссылке. Используется только совместно с атрибутом href и имеет исключительно информативный характер.</dd>
+    <a class="tryit1" href="https://puzzleweb.ru/html/examples/area_hreflang.php" target="_blank">Пример »</a>
+    <dt>  media:</dt>
+    <dd>Атрибут media определяет тип документа, на который ведет ссылка или указывает, тип устройства, для которого предназначается ссылка (пример: мобильный телефон, принтер и тд.).<br><br>
+
+        Атрибут может принимать несколько значений и используется только совместно с атрибутом href.</dd>
+        <dt>rel:</dt>
+        <dd>Атрибут rel определяет отношение между текущим документом и связанным. Возможные значения атрибута:
+            <ul>
+                <li><b>alternate</b> - ссылка на альтернативную версию документа (страница для печати, страница на другом языке и тд.).</li>
+                <li><b>author</b> - ссылка на автора документа.</li>
+                <li><b>bookmark</b> - постоянный URL-адрес, используемый для закладок.</li>
+                <li><b>help</b> - ссылка на документ-справку.</li>
+                <li><b>license</b> - ссылки на сведения об авторских правах для документа.</li>
+                <li><b>next</b> - следующий документ в выделенной области.</li>
+                <li><b>nofollow</b> - ссылка на неиндексируемый документ («nofollow» используется в Google, чтобы указать, что поисковый бот не должен переходить по этой ссылке).</li>
+                <li><b>noreferrer</b> - указание браузеру не посылать HTTP-заголовок если пользователь перешел по ссылке.</li>
+                <li><b>prefetch</b> - указывает, что следует кэшировать целевой документ.</li>
+                <li><b>prev</b> - предыдущий документ в выделенной области.</li>
+                <li><b>search</b> - ссылка на поиск для документа.</li>
+                <li><b>tag</b> - тег (ключевое слово) для текущего документа.</li>
+                <a class="tryit1" href="https://puzzleweb.ru/html/examples/area_rel.php" target="_blank">Пример »</a>
+            </ul></dd>
+            <dt>shape:</dt>
+            <dd>Атрибут shape указывает форму области. Он используется совместно с атрибутом coords для указания размера, формы и размещения активной области. Возможные значения атрибута:
+                <ul>
+                    <li><b>default</b> - определяет весь регион.</li>
+                    <li><b>rect</b> - определяет прямоугольную область.</li>
+                    <li><b>circle</b> - определяет круглую область.</li>
+                    <li><b>poly</b> - определяет многоугольную область.</li>
+                </ul>
+            </dd>
+            <dt>target:</dt>
+            <dd>Атрибут target определяет, где будет открыт документ, при переходе по ссылке. Используется только вместе с атрибутом href. Возможные значения атрибута:
+                <ul>
+                    <li><b>_blank</b> - открывает документ в новом окне или вкладке.</li>
+                    <li><b>_parent</b> - открывает документ в родительском фрейме.</li>
+                    <li><b>_self</b> - открывает документ в той же директории, где располагается ссылка (значение по умолчанию).</li>
+                    <li><b>_top</b> - открывает документ во всю ширину окна.</li>
+                    <li><b>имя_фрейма</b> - открывает документ в iframe, имя которого было указано в качестве значения.</li>
+                </ul>
+                <a class="tryit1" href="https://puzzleweb.ru/html/examples/area_target.php" target="_blank">Пример »</a>
+            </dd>
+            <dt>type:</dt>
+            <dd>Атрибут type указывает MIME-тип (спецификация форматирования сообщений и кодирования информации для передачи по интернету) документа, на который ведет ссылка. Используется только совместно с атрибутом href.
+				<a class="tryit1" href="https://puzzleweb.ru/html/examples/area_type.php" target="_blank">Пример »</a></dd>
+                <p class="prim"><span class="dom">Примечание:</span> атрибут usemap в <a href="https://puzzleweb.ru/html/tag_img.php">теге &lt;img&gt;</a> связан с атрибутом name элемента &lt;map&gt;, и создает связь между картинкой и картой.</p>
+                <p style="font-size: 20px"><a href="#top">читать с начала</a></p>
+            </body>
 </html> 
