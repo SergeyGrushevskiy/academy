@@ -435,5 +435,31 @@ float: left;
         width: 1140px;
         margin: 0 auto;
         background: #ffffff;
+       
         }
-      
+        .Sellers {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 44px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            margin-bottom: 30px;
+            text-align: center;
+            }
+            .ramka2  {
+            background: url(file/ramka2.png);
+            width: 272px;
+            height: 272px;
+            left: 80px;
+            top: 2224px;
+            list-style-type: none;
+            float:left;
+             margin-top: 20px;
+            }
+            .ramka2> {
+                
+                 margin-top: 20px;
+                 padding-left: 16px;
+                }
