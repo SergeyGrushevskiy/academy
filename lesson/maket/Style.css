@@ -1,0 +1,464 @@
+/* Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear{
+      clear:both;
+}
+.header{
+      background: white;
+}
+.conteiner {
+       width: 1140px;
+       height: 72px;
+       margin: 0 auto;
+       background: #C4C4C4;
+    }
+.logo{
+      padding-left: 30px;
+      float: left;
+      mix-blend-mode: multiply;
+}
+.wolf-house{
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 25px;
+     padding-left: 10px;
+     padding-top: 27px;
+     float: left;
+    }
+.search{
+  margin-top:21px;
+  margin-left: 70px;
+  width: 540px;
+  height: 40px;
+  left: 308px;
+  top: 61px;
+  background: #fcfcfc;
+  border-radius: 31px;
+  float:left
+ }
+.lupa{
+    width: 30px;
+    height: 30px; 
+    margin-top: 5px;
+    margin-left: 10px;}
+.menu{
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 25px; 
+     margin-left    : 50px;
+     float: left;
+  }
+.menu li{
+    list-style-type: none;
+    padding-left: 5px;
+    margin-top: 32px;
+    float: left;
+}
+.flag{
+   width: 15px;
+   height: 15px;
+   margin-top: 2px;
+}
+.otstup_v_menu { 
+               padding-left: 10px;
+            }
+.three{
+ width: 15px;
+ height: 16px;
+ left: 1191px;
+ top: 62px;
+ font-family: 'Open Sans';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 12px;
+ line-height: 16px;
+ }
+
+
+
+
+
+ .stroka{
+    
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.01em;
+color: #000000;
+opacity: 0.5;
+ }
+ .conteiner1 {
+       width: 1140px;
+       height: 72px;
+       margin: 0 auto;
+       background: #E5E5E5;
+    }
+.catalog-menu{
+font-family: 'Open Sans';
+font-style: '400, Regular';
+font-weight: 400;
+font-size: 16px;
+line-height: 21,79px; 
+padding-top: 24px;
+padding-bottom: 10px;
+margin-left: 40px;
+float: left;
+      }
+.catalog-menu li{
+
+list-style-type: none;
+padding-left: 5px;
+float: left;
+         }
+ul li.categories{
+color: #FFFFFF;
+list-style-type: none;
+padding-left: 40px;
+margin-right: 5px;
+           }
+  .bluecategories{
+  background: url(file/Frame14.png)  55px no-repeat,
+              url(file/Rectangle24.png) 40px no-repeat;
+                 }
+            
+   .otstup_v_menu1{
+                     padding-left: 32px;
+                  }
+ul li.red{
+color: #FF0C0C;
+list-style-type: none;
+margin-right: 5px;
+      }
+.conteinerButton {
+    width: 1140px;
+    height: 464px;
+    margin: 0 auto;
+    background: url('file/st_banner\ 1.png') no-repeat;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Button{
+    background: url(file/Frame15.png)  120px 250px no-repeat;
+    }
+.Atomic{
+
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+padding-top: 128px;
+padding-left: 126px;
+color: #FFFFFF;
+float: left;
+
+}
+.new2021{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    letter-spacing: 0.01em;
+    padding-top: 12px;
+    padding-left: 126px;
+    padding-bottom: 100px;
+    color: #FFFFFF;
+    float: left;    
+    }
+    
+
+    .conteinerContent {
+        width: 1140px;
+        margin: 0 auto;
+        background: #ffffff;
+       
+        }
+        .Snowboards {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 44px; 
+            letter-spacing: 0.03em; 
+            padding-top: 61px;
+            padding-left: 40px;
+            float: left;
+            }
+          
+            .menuContent {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21,79px; 
+                padding-top: 17px;
+                padding-bottom: 10px;
+                margin-left: 366px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                float: left;
+                }
+              
+                .menuContent li{
+                list-style-type: none;
+                padding-left: 5px;
+                float: left;
+                }
+              
+                .menuContent li.otstup_view { 
+                margin-top: -9px;  
+                padding-left: 200px;  
+               
+                }
+                
+                .menuContent li.view{
+                margin-left: -120px;  
+                }
+              
+                .menuContent li.view9{
+                margin-left: -50px;  
+                }
+               
+                .menuContent li.vector{
+                margin-left: -30px;  
+                }
+               
+                .menuContent li.mostPopular{
+                margin-top: -5px;
+                }
+              
+                .leftMenu {
+                width: 340px;
+                float: left;
+                clear: both;
+                }
+              
+                .leftContent {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0.03em;
+                padding-left:40px;
+                
+                }
+              
+                .leftContent li{
+                list-style-type: none;
+                padding-left: 5px;
+                padding-bottom: 5px;
+                float: left;
+                }
+              
+                .leftContent li.leftVector {
+                float: right;
+                }
+              
+                .leftContent li.fadeText {
+                color: #BFBEBE;
+                }
+              
+                .leftContent li.square {
+                clear: both;
+                }
+              
+                .leftContent li.squareText {
+                margin-left: 10px;
+                margin-top: -1px;
+                }
+              
+                .leftContent li.lineMargin {
+                margin-top: -10px;
+                }
+              
+                .leftContent li.ViewmoreMargin {
+                margin-top: 10px;
+                }
+              
+                .cards > ul > li{
+                width: 260px;
+                height: 380px;  
+                background: #ffffff;
+                border-right: solid 1px lightgrey;
+                list-style-type: none;
+                text-align: center;
+                float: left;
+                }
+              
+                .cards > ul > li p{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.03em;
+                text-align: left;
+                padding-left: 20px;
+                padding-right:10px;
+                margin: 0 auto;
+                float: left;
+                }
+              
+                .cards > ul > li p > span{
+                font-weight: bold;
+                color: black;
+                }
+              
+                .cards ul li p.fadeText1 {
+                color: #BFBEBE;
+                padding-top: 15px;
+                padding-bottom: 10px;
+                }
+              
+                .cards ul li p.fadeText2 {
+                 color: #BFBEBE;
+                padding-top: 12px;
+                padding-bottom: 10px;
+                }
+              
+                .cards ul li p.fadeText3 {
+                color: #BFBEBE;
+                padding-top: 0px;
+                padding-bottom: 10px;
+                }
+              
+                .cards ul li.Photo {
+                padding-top: 30px;
+                }
+                
+                .cards ul li p.price {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0.03em;
+                }
+              
+                .cards ul li p.discountPrice {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0.03em;
+                padding-left: 0px;
+                color: #BFBEBE;
+                text-decoration: line-through;
+                }
+              
+                .cards ul img.stars {
+                padding-top: 5px;
+                padding-right: 10px;
+                float: right;
+                }
+              
+                .cards ul li.last{
+                border-style: hidden;
+                color: black;
+                }
+              
+                .cards ul li img.trip {
+                width: 258px;
+                height: 220px;
+                padding-top: 25px;
+                }
+              
+                .cards > ul > li h3{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                margin-bottom: 0px;
+                }
+              
+                .cards > ul > li h4{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 33px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                }
+              
+                .cards > ul > li h5{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                text-decoration-line: underline;
+                margin-top: 0;
+                }
+              
+                .button_View{
+                width: 1140px;
+                display: inline-block;
+                text-align: center;
+                margin: 32px 0px 32px 140px;
+                }
+                .button_strip{
+                    display: inline-block;
+                    width: 1050px;
+                    height: 0px;
+                    left: 80px;
+                    top: 2144px;
+                    padding-top: 37px;
+                    }
+        
+                
+    .conteinerSellers {
+        width: 1140px;
+        margin: 0 auto;
+        background: #ffffff;
+       
+        }
+        .Sellers {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 44px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+            padding-top: 15px;
+            margin-left: 550px;
+            }
+           
+            .ramka2 {
+            background: url(file/ramka2.png);
+            width: 272px;
+            height: 272px;
+            left: 80px;
+            top: 2224px;
+            list-style-type: none;
+            float:left;
+             margin-top: 20px;
+            }
+                .ramka2 li p{ }
