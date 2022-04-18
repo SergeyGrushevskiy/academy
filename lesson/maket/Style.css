@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+.clearfix::after{content:"";display: block; clear: both;}
 .clear{
       clear:both;
 }
@@ -104,7 +105,7 @@ opacity: 0.5;
        width: 1140px;
        height: 72px;
        margin: 0 auto;
-       background: #E5E5E5;
+       background: #ffffff;
     }
 .catalog-menu{
 font-family: 'Open Sans';
@@ -127,7 +128,7 @@ ul li.categories{
 color: #FFFFFF;
 list-style-type: none;
 padding-left: 40px;
-margin-right: 5px;
+
            }
   .bluecategories{
   background: url(file/Frame14.png)  55px no-repeat,
@@ -429,13 +430,15 @@ float: left;
                     left: 80px;
                     top: 2144px;
                     padding-top: 37px;
+                    padding-left: 40px;
                     }
         
-                
+   /* BEstSellers */
     .conteinerSellers {
         width: 1140px;
         margin: 0 auto;
         background: #ffffff;
+        padding-left: 40px;
        
         }
         .Sellers {
@@ -448,26 +451,276 @@ float: left;
             align-items: center;
             letter-spacing: 0.03em;
             padding-top: 15px;
-            margin-left: 550px;
+            margin-left: 470px;
             }
            
-            .Cards2{
-            background: url(file/ramka2.png);
+             .BestSellers{
+           
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 44px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            margin-bottom: 30px;
+            text-align: center;
+            }
+
+        
+        .BestSellers ul{
+
+        }
+        .BestSellers > ul>li{
             width: 272px;
             height: 272px;
-            left: 80px;
-            top: 2224px;
+            left: 368px;
+            top: 2224px;  
+            background: #ffffff;
+            border: solid 1px lightgrey;
             list-style-type: none;
-            float:left;
-             margin-top: 20px;
-            }
-            .photo2{
-                padding-top: 15; 
-                padding-left: 69px;
-                padding-bottom: 96px;
-            }
-            .cards3 ul li.Photo {
-                padding-top: 15px;
-                }
+            text-align: center;
            
+            margin-right: 4px;
+            margin-top: 20px;
+            float: left;
+           
+        }
+        .BestSellers > ul>li>p{
               
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+            text-align: left;
+            padding-left: 20px;
+            padding-right:10px;
+            margin: 0 auto;
+            float: left;
+        }
+        .BestSellers > ul>li>img{
+            width: 160;
+            height: 160;
+            margin-bottom: 5px;
+            margin-top: 15px;
+            
+        }
+        .BestSellers > ul li:last-child{
+            margin-right: 0;
+        }  
+        .BestSellers > ul>li>.brand{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.01em;
+            margin-top:-10px
+        }
+      
+        .BestSellers ul li p.price {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.03em;
+            margin-top:15px;
+            clear: both;
+        }
+        .BestSellers ul li p.one{
+           font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.03em;
+            margin-top:39px;
+            clear: both;
+        }
+
+
+
+        /* FeedBack*/
+         .conteinerFeedBack{
+            width: 1140px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding-left: 40px;
+              
+        }
+        .FeedBack{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.03em;
+           
+        }
+        .FeedBack ul{
+             
+            list-style-type: none;
+            margin-bottom: 29px;
+            margin-right: 10px;
+        }
+        .FeedBack ul li p {
+             
+           margin-top: 13px;
+        }
+        .FeedBack ul li p.Email{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+           
+        }
+        .FeedBack ul.Need{
+              
+            height: 203px;
+            width: 540px;
+            float: left; 
+            
+
+       }
+       .FeedBack ul.Stay{
+        height: 203px;
+        width: 540px;
+    
+        float: left; 
+    
+       }
+
+        /* Контейнер Мидл*/ 
+        .conteinerMiddle{
+            width: 1140px;
+            height: 72px;
+            margin: 0 auto;
+            background:#1977DA;
+            ;
+        }
+        .buttonMiddle {
+            font-family: 'Open Sans';
+            font-style: '400, Regular';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21,79px;
+            padding-top: 24px;
+            padding-bottom: 10px;
+            margin-left: 40px;
+            float: left;
+            list-style-type: none;
+        }
+        .buttonMiddle ul{
+            list-style-type: none;
+            padding-left: 65px;
+            float: left;
+        }
+        .buttonMiddle li{
+            list-style-type: none;
+            padding-left: 65px;
+            color: #FFFFFF;
+            float: left;
+        }
+        .otstup_categoties{
+            color: #FFFFFF;
+            list-style-type: none;
+            padding-left: 163px;
+        }
+   /* Button */
+        .button{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            display: flex;
+            letter-spacing: 0.03em;
+           
+            
+        }
+        .button h3{
+            margin-top: 36px;
+            padding-bottom: 15px;
+
+        }
+        .button li{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            list-style-type: none;
+        }
+        
+        .GiftCertificates {
+            padding-top: 36px;
+            padding-left: 40px;
+            
+        }
+        .GiftCertificates li{
+            margin-top: 8px;
+         }
+       
+     
+        .Resources{
+            padding-top: 35px;
+            padding-left: 170px;
+        }
+        .Resources li{
+            margin-top: 6px;
+        }
+   
+        .M-SPORT{
+            padding-left: 120px;
+            padding-top: 34px;
+        }
+        .M-SPORT li{
+            margin-top: 6px;
+        }
+        .messenger{
+            padding-top: 41px;
+            padding-left: 150px;
+            float: left;
+        }
+        .messenger img{
+            margin-top: 22px;
+        }
+        .messenger p{
+            margin-top: 29px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        /* SPORT */
+        .conteinerSport{
+            width: 1140px;
+            height: 72px;
+            margin: 0 auto;
+         
+        }
+    
+
+        .SportLogo{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.03em;
+            margin-top: 20px;
+            margin-left: 497px;
+            float: left;
+        }
+     
