@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>*** CSS CHESS   IT ***</title>
+    </head>
+    <body>
+<style>
+
+table.CHESS
+  {
+    border-collapse: collapse;
+  }
+
+  table.CHESS td
+  {
+    width: 60px;
+    height:60px;
+    border: solid rgb(19, 19, 19) 1px;
+  }
+  table{ counter-reset: planer 100;
+      }
+      td::before{
+          counter-increment: planet - 1;
+          content: 'Число ' counter(planet);
+          
+      }
+      table.CHESS tr:nth-of-type(even) td:nth-of-type(odd) {
+          
+    
+  }
+  
+  table.CHESS tr:nth-of-type(even) td:nth-of-type(even) {
+      
+  }
+  table.CHESS tr:nth-of-type(odd) td:nth-of-type(odd) {
+ 
+  }
+  table.CHESS tr:nth-of-type(odd) td:nth-of-type(even) {
+   
+  }
+  table.CHESS tr:nth-of-type(even) td:first-child {
+    
+  }
+  
+  table.CHESS tr:nth-of-type(odd) td:first-child {
+   
+  }
+
+  table.CHESS tr:last-child td:nth-of-type(odd) {
+  
+  }
+  table.CHESS tr:last-child td:nth-of-type(even) {
+    
+  }
+  table.CHESS tr:nth-of-type(even) td:last-child {
+   
+  }
+  table.CHESS tr:nth-of-type(odd) td:last-child {
+    
+  }
+  table.CHESS tr:first-child td:nth-of-type(even) {
+    
+  }
+
+  table.CHESS tr:first-child td:nth-of-type(odd) {
+   
+  }
+ 
+ 
+
+
+    
+</style>
+
+<table class='CHESS'>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+</table>
+
+</body></html>
