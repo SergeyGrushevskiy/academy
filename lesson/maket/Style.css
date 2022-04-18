@@ -437,7 +437,7 @@ float: left;
         width: 1140px;
         margin: 0 auto;
         background: #ffffff;
-        padding-left: 40px;
+        padding-left: 50px;
        
         }
         .Sellers {
@@ -521,7 +521,7 @@ float: left;
             font-size: 16px;
             line-height: 22px;
             letter-spacing: 0.03em;
-            margin-top:15px;
+            margin-top:10px;
             clear: both;
         }
         .BestSellers ul li p.one{
@@ -531,7 +531,7 @@ float: left;
             font-size: 16px;
             line-height: 22px;
             letter-spacing: 0.03em;
-            margin-top:39px;
+            margin-top:30px;
             clear: both;
         }
 
