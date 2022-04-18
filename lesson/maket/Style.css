@@ -9,11 +9,10 @@
       clear:both;
 }
 .header{
-      background: white;
+    background: #C4C4C4;
 }
 .conteiner {
        width: 1140px;
-       height: 72px;
        margin: 0 auto;
        background: #C4C4C4;
     }
@@ -143,13 +142,18 @@ color: #FF0C0C;
 list-style-type: none;
 margin-right: 5px;
       }
+
+      /* Button*/
+      .headerButton{
+        background: url('file/st_banner\ 1.png') no-repeat;
+        background-size: 100%;
+      }
 .conteinerButton {
     width: 1140px;
     height: 464px;
     margin: 0 auto;
-    background: url('file/st_banner\ 1.png') no-repeat;
     padding-top: 10px;
-    padding-bottom: 10px;
+    
 }
 .Button{
     background: url(file/Frame15.png)  120px 250px no-repeat;
@@ -437,7 +441,7 @@ float: left;
         width: 1140px;
         margin: 0 auto;
         background: #ffffff;
-        padding-left: 40px;
+        padding-left: 60px;
        
         }
         .Sellers {
@@ -521,7 +525,7 @@ float: left;
             font-size: 16px;
             line-height: 22px;
             letter-spacing: 0.03em;
-            margin-top:15px;
+            margin-top:7px;
             clear: both;
         }
         .BestSellers ul li p.one{
@@ -531,13 +535,13 @@ float: left;
             font-size: 16px;
             line-height: 22px;
             letter-spacing: 0.03em;
-            margin-top:39px;
+            margin-top:30px;
             clear: both;
         }
 
 
 
-        /* FeedBack*/
+        /*   Need help  Stay in the know */
          .conteinerFeedBack{
             width: 1140px;
             margin: 0 auto;
@@ -545,7 +549,21 @@ float: left;
             padding-left: 40px;
               
         }
-        .FeedBack{
+        .blue {
+            width: 136px;
+            height: 36px;
+            background: url(file/Chat\ How.png);
+            margin: 0 auto;
+            color: white;
+          }
+          .bluet {
+            width: 136px;
+            height: 36px;
+            background: url(file/Cnow2.png);
+            margin: 0 auto;
+            color: white;
+          }
+        .Feedback {
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 400;
@@ -553,48 +571,84 @@ float: left;
             line-height: 22px;
             text-align: center;
             letter-spacing: 0.03em;
-           
-        }
-        .FeedBack ul{
-             
+          }
+        
+          .Feedback > ul li {
+            width: 550px;
+            height: 203px;    
             list-style-type: none;
+            text-align: center;
             margin-bottom: 29px;
-            margin-right: 10px;
-        }
-        .FeedBack ul li p {
-             
-           margin-top: 13px;
-        }
-        .FeedBack ul li p.Email{
+            float: left;
+          }
+        
+           .Feedback > ul > li p {
+            text-align: center;
+            margin-top: 16px;
+          }
+        
+          .Feedback > ul > li p:first-child {
+            font-weight: bold;
+            margin-top: 28px;
+          }
+        
+        
+        
+          .Feedback > ul > li >div > p {
+           padding-top: 6px;
+          }
+        
+          .Feedback > ul > li p:last-child {
+            font-weight: bold;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            margin-top: 20px;
+          }
+        
+          .Feedback > ul li p.Email{
+            font-family: 'Open Sans';
+            font-style: normal;
             font-weight: 400;
             font-size: 12px;
             line-height: 16px;
-           
-        }
-        .FeedBack ul.Need{
-              
-            height: 203px;
-            width: 540px;
-            float: left; 
-            
+            text-align: left;
+            letter-spacing: 0.03em;
+            padding-left: 100px;
+            margin-top: 6px;
+          }
+        
+          .Feedback > ul li > img {
+            margin-top: 3px;
+            padding-left: 100px;
+            float: left;
+          }
+        
+          .Feedback > ul li:last-child > div {
+            margin-top: 3px;
+            float: left;
+          }
+        
+          .Feedback > ul li:last-child div p {
+            margin-top: 0px;}
 
-       }
-       .FeedBack ul.Stay{
-        height: 203px;
-        width: 540px;
-    
-        float: left; 
-    
-       }
-
-        /* Контейнер Мидл*/ 
+        /* Conteiner*/ 
+        .conteinerMiddleBlue{
+      
+            height: 72px;
+            margin: 0 auto;
+            background:#1977DA;
+                }
         .conteinerMiddle{
             width: 1140px;
             height: 72px;
             margin: 0 auto;
             background:#1977DA;
-            ;
-        }
+                }
         .buttonMiddle {
             font-family: 'Open Sans';
             font-style: '400, Regular';
