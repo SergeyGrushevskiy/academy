@@ -312,7 +312,6 @@ float: left;
                 letter-spacing: 0.03em;
                 text-align: left;
                 padding-left: 20px;
-                padding-right:10px;
                 margin: 0 auto;
                 float: left;
                 }
@@ -447,9 +446,9 @@ float: left;
             font-weight: 700;
             font-size: 32px;
             line-height: 44px;
-            display: flex;
-            align-items: center;
+            text-align: center;
             letter-spacing: 0.03em;
+<<<<<<< HEAD
             padding-top: 15px;
             margin-left: 470px;
             }
@@ -472,6 +471,13 @@ float: left;
 
         }
         .BestSellers > ul>li{
+=======
+            margin-bottom: 30px;
+            text-align: center;
+            }
+            .ramka2  {
+            background: url(file/ramka2.png);
+>>>>>>> ce565f84268f3ffc236a536c3a9459cffd4d4931
             width: 272px;
             height: 272px;
             left: 368px;
@@ -479,6 +485,7 @@ float: left;
             background: #ffffff;
             border: solid 1px lightgrey;
             list-style-type: none;
+<<<<<<< HEAD
             text-align: center;
            
             margin-right: 4px;
@@ -724,3 +731,13 @@ float: left;
             float: left;
         }
      
+=======
+            float:left;
+             margin-top: 20px;
+            }
+            .ramka2> {
+                
+                 margin-top: 20px;
+                 padding-left: 16px;
+                }
+>>>>>>> ce565f84268f3ffc236a536c3a9459cffd4d4931
