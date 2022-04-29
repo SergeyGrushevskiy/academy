@@ -5,12 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star</title>
+    <style>
+
+
+       div.conteiner{
+             width: 530px;
+
+   }
+    div.star {
+             width: 76px;
+             height: 78px;
+             background: url('star.png') no-repeat;
+             float: right;
+             list-style-type: none;
+             padding-left: 12px;
+  }
+
+              div.star:hover {
+                    background: url('star1.png') no-repeat;
+  }
+
+             div.star:hover ~ div {
+                      background: url('star1.png') no-repeat;
+  }
+
+    </style>
 </head>
 <body>
-    <img src="/academy/lesson6/CHESS 6d/star0.png">
-    <img src="/academy/lesson6/CHESS 6d/star0.png">
-    <img src="/academy/lesson6/CHESS 6d/star0.png">
-    <img src="/academy/lesson6/CHESS 6d/star0.png">
-    <img src="/academy/lesson6/CHESS 6d/star0.png">
+  <div class="conteiner">
+     <div class="star"></div>
+     <div class="star"></div>
+     <div class="star"></div>
+     <div class="star"></div>
+     <div class="star"></div>
+     <div class="star"></div>
+   
+    </div>
 </body>
 </html>

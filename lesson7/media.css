@@ -1,0 +1,16 @@
+@media all and (max-width: 470px) {
+  div.mainBack, div.header, div.leftMenu {
+    width: 450px;
+}
+
+div.mainBack{
+  background: url(/lesson5/file/FootballPhoto.png);
+}
+
+div.leftMenu{
+  
+  padding-left: 130px; 
+  float: left; 
+  margin-right: 0px;
+}
+}
