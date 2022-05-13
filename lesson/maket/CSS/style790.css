@@ -1,0 +1,98 @@
+@media all and (max-width: 1170px){
+    
+    .conteiner,.conteinerButton, .conteinerSport,.button,.conteiner1, .conteinerContent,.menuContent,.conteinerSellers,.conteinerFeedBack,.conteinerMiddle{
+        width: 770px;
+    }
+    .header {
+        background: #C4C4C4;
+        padding-left: 30px;
+    }
+    .menu{
+        font-size: 10px;
+        float: none;
+    }
+    .Button {
+        background: url(/lesson/maket/file/Frame15.png) 123px 260px no-repeat;
+    }
+    .catalog-menu {
+        margin-left: 56px;
+    }
+  
+    .otstup_v_menu1 {
+        padding-left: 13px;
+    }
+   
+    .search{
+        width: 280px;
+    }
+  
+    .Snowboards {
+    padding-top: 0px;
+    }
+    .menuContent li.otstup_view {
+        padding-left: 0px;
+    }
+    .leftMenu {
+        width: 300px;
+    }
+    .menuContent{
+        margin: 0 270px;
+        float: none;
+    }
+    .menuContent li {
+        margin-left: 3px;
+    }
+    div.cards {
+        margin-left: 220px;
+    }
+    .cards > ul > li{
+        width: 235px; 
+    }
+    .cards ul li.last {
+        border-style: unset;
+        border-right: none;
+        float: right;
+        padding-top: 0px;
+    }
+    
+    .cards ul li.Photo {
+        border-style: unset;
+        padding-top: 16px;
+        border-right: none;
+        padding-left: 0px;
+        float: right;
+    }
+    .button_View {
+        margin: 32px 0px 32px -160px;
+    }
+    .button_strip {
+        margin-left: -224px;
+    }
+    .BestSellers {
+        width: 620px;
+        margin-left: 76px;
+    }
+    .Feedback > ul li {
+        width: 360px;
+        padding-left: 0px;
+    }
+      .Feedback > ul li > img {
+    margin-top: 3px;
+    padding-left: 52px;
+    float: left;
+      }
+      .Feedback > ul li:last-child > div {
+        margin-left: -53px;
+      }
+      .buttonMiddle li {
+        padding-left: 25px;
+      }
+      .Resources {
+      
+        padding-left: 64px;
+    }
+    .conteinerSport {
+        margin-left: -284px;
+    }
+
+}

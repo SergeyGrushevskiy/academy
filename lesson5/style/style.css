@@ -1,0 +1,60 @@
+div.mainBack{
+    background: url() repeat-y;
+    
+    overflow: hidden;
+  }
+  
+  div.fadeBall{
+   
+    background: url(/lesson5/file/ball3.png) top right repeat-y;
+    overflow: hidden;
+  }
+  
+  div.header{
+    text-align: center; 
+    padding: 20px; 
+    background-color: rgba(78, 129, 238, 0.582);
+  }
+  
+  div.leftMenu{
+    width: 150px; 
+    padding: 10px; 
+    float: left; 
+    margin-right: 10px;
+    background-color: brown;
+  }
+  
+  ol.disc{
+    list-style-type: disc;
+  }
+  
+  h3.footballTitle{
+    text-align: center; 
+  }
+  
+  img.position{
+    float: left; 
+    padding: 5px;
+     margin-right: 20px;
+     margin-left: 25px;
+     width: 210px;
+     height: 150px;
+  }
+  
+  div.content{
+    margin-left: 191px; 
+    padding: 0px 20px 20px 20px;
+  }
+  
+  div.footer{
+    text-align: center; 
+    padding: 20px; 
+    background-color: rgba(78, 129, 238, 0.582);
+  }
+  
+  div.clearfix::after{
+    content: '';
+    display: block;
+    clear:both;
+  }
+  

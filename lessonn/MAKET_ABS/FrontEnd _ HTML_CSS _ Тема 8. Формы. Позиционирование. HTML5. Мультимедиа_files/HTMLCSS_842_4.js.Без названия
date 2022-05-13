@@ -1,0 +1,85 @@
+﻿var Str="";
+
+
+Str+="<div class='SExampleHeader' style='line-height: 1.15'>";
+
+Str+='<h3 style="margin-bottom: 10px">Микроразметка</h3>';
+
+Str+='<p><i><b>Микроразметка</b> &mdash; способ семантической разметки на веб-страницах информации о&nbsp;некоторых сущностях (событиях, организациях, людях, товарах и т.д.) с&nbsp;использованием стандартных элементов языка HTML.<br />';
+Str+='Пользователь-человек через обычный браузер видит страницу с микроразметкой как&nbsp;обычную веб-страницу, но пользователи-программы (поисковые роботы, речевые синтезаторы и т.д.) способны извлечь из такой страницы структурированную информацию о представленных сущностях.';
+Str+='<br>Есть три вида микроразметки &mdash; <b>микроданные (Microdata)</b>, <b>микроформаты</b> и <b>RDF</b>.</i></p>';
+
+
+Str+='<h4 style="margin-bottom: 5px; margin-top: 10px">Микроданные (Microdata)</h4>';
+
+Str+="<div style='font-size: 14px; line-height: 1.2'>";
+Str+='&lt;div <b>itemscope itemtype="http://webmaster.yandex.ru/vocabularies/enc-article.xml"</b>&gt;<br />';
+Str+='<div style="padding-left: 20px">';
+Str+='  &lt;h2 <b>itemprop=title</b>&gt;о Барто Агнии Львовне&lt;/h2&gt;<br />';
+Str+='  &lt;meta <b>itemprop=category</b> content="Детская литература"&gt;<br />';
+Str+='  &lt;meta <b>itemprop=category</b> content="Советские писатели"&gt;<br />';
+Str+='  &lt;div <b>itemprop=content</b>&gt;Барто Агния Львовна, русская советская поэтесса. Начала печататься в 1925. Пишет для детей &mdash; о жизни советской школы, семьи, пионерах. Автор сборников стихов.&lt;/div&gt;<br />';
+Str+='  &lt;div <b>itemprop=references</b>&gt;Лит.: Дмитриева В., Агния Барто, М.-Л., 1953; Соловьев Б., Агния Барто, М., 1967.&lt;/div&gt;<br />';
+Str+='  &lt;div&gt;<br />';
+Str+='<div style="padding-left: 20px">';
+Str+='    &lt;span <b>itemprop=author</b>&gt;Е. А. Таратута&lt;/span&gt;.<br />';
+Str+='    &lt;span <b>itemprop=source</b>&gt;БСЭ&lt;/span&gt;, &lt;span <b>itemprop=source-date</b>&gt;1969-1978&lt;/span&gt;.<br />';
+Str+='</div>';
+Str+='  &lt;/div&gt;<br />';
+Str+='  &lt;img <b>itemprop=photo</b> src="http://slovari.yandex.ru/barto.jpg"&gt;</img><br />';
+Str+='</div>';
+Str+='&lt;/div&gt;';
+Str+="</div>";
+
+
+Str+='<h4 style="margin-bottom: 5px; margin-top: 13px">Микроформаты</h4>';
+
+Str+="<div style='font-size: 14px; line-height: 1.2'>";
+Str+='&lt;div <b>class=vcard</b>&gt;<br />';
+Str+='<div style="padding-left: 20px">';
+Str+=' &lt;div&gt;<br />';
+Str+='<div style="padding-left: 20px">';
+Str+='   &lt;span <b>class=category</b>&gt;Учебный центр&lt;/span&gt;<br />';
+Str+='   &lt;span <b>class="fn org"</b>&gt;ОЦ ПВТ&lt;/span&gt;<br />';
+Str+='</div>';
+Str+=' &lt;/div&gt;<br />';
+Str+=' &lt;div <b>class=adr</b>&gt;<br />';
+Str+='<div style="padding-left: 20px">';
+Str+='   &lt;span <b>class=locality</b>&gt;г. Минск&lt;/span&gt;,<br />';
+Str+='   &lt;span <b>class=street-address</b>&gt;ул. Скрыганова, 14&lt;/span&gt;<br />';
+Str+='</div>';
+Str+=' &lt;/div&gt;<br />';
+Str+=' &lt;div&gt;Телефон: &lt;span <b>class=tel</b>&gt;+375 (29) 222-24-60&lt;/span&gt;&lt;/div&gt;<br />';
+Str+=' &lt;div&gt;';
+Str+='<div style="padding-left: 20px">';
+Str+='  Мы работаем &lt;span <b>class=workhours</b>&gt;ежедневно с 9:00 до 18:00&lt;/span&gt;<br />';
+Str+='   &lt;span <b>class=url</b>&gt;<br />';
+Str+='<div style="padding-left: 20px">';
+Str+='     &lt;span <b>class=value-title</b> title="http://www.it-academy.by/"&gt; &lt;/span&gt;<br />';
+Str+='</div>';
+Str+='   &lt;/span&gt;<br />';
+Str+='</div>';
+Str+=' &lt;/div&gt;<br />';
+Str+='</div>';
+Str+='&lt;/div&gt;';
+Str+="</div>";
+
+
+Str+='<h4 style="margin-bottom: 5px; margin-top: 13px">RDF (Resource Description Framework, среда описания ресурса)</h4>';
+
+Str+="<div style='font-size: 14px; line-height: 1.2'>";
+Str+='&lt;div <b>xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Person"</b>&gt;<br />';
+Str+='<div style="padding-left: 20px">';
+Str+='  Мое имя &lt;span <b>property="v:name"</b>&gt;Пётр Иванов&lt;/span&gt;,<br />';
+Str+='  но вы можете звать меня &lt;span <b>property="v:nickname"</b>&gt;Петя&lt;/span&gt;.<br />';
+Str+='  Моя домашняя страница &amp;mdash; &lt;a href="http://www.ivanov.ru" <b>rel="v:url"</b>&gt;здесь&lt;/a&gt;.<br />';
+Str+='  Я живу в Минске и работаю &lt;span <b>property="v:title"</b>&gt;преподавателем&lt;/span&gt;<br />';
+Str+='  в &lt;span <b>property="v:affiliation"</b>&gt;ОЦ ПВТ&lt;/span&gt;.<br />';
+Str+='</div>';
+Str+='&lt;/div&gt;<br />';
+Str+="</div>";
+
+
+Str+="</div>";
+
+document.write(Str);

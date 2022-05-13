@@ -1,0 +1,102 @@
+@media all and (max-width: 900px){
+    .conteiner,.conteinerButton,.Feedback,.BestSellers, .conteinerSport,.button,.conteiner1, .conteinerContent,.menuContent,.conteinerSellers,.conteinerFeedBack,.conteinerMiddle
+    {
+        width: 560px;
+    }
+    .header {
+        background: #C4C4C4;
+        padding-left: 0px;
+        margin-left: -164px;
+    }
+     .search {
+            width: 117px;
+            margin-left: 3px;
+        }
+        .menu{
+            font-size: 10px;
+            float: none;
+        }
+        .logo {
+    padding-left: 73px;
+        }
+        .otstup_v_menu {
+            padding-left: 0px;
+        }
+        .otstup_v_menu1 {
+            padding-left: 4px;
+        }
+        .bluecategories {
+            background: url(/lesson/maket/file/Frame14.png) 3px no-repeat, url(/lesson/maket/file/Rectangle24.png) -54px no-repeat;
+        }
+        .catalog-menu {
+            margin-left: -12px;
+            font-size: 12px;
+        }
+        .Atomic {
+            margin-top: -120px;
+        }
+        .Button {
+            background: url(/lesson/maket/file/Frame15.png) 123px 140px no-repeat;
+        }
+        .Snowboards {
+            padding-top: 0px;
+            margin-left: -40px;
+        }
+        .leftContent {
+            padding-left: 1px;
+        }
+        .leftContent li.leftVector {
+            padding-right: 40px;
+        }
+        .menuContent {
+            margin: -135px 243px;
+        }
+        .cards ul li img.trip {
+            width: 230px;
+        }
+        .button_View {
+            margin: 32px 0px 32px -295px;
+        }
+        .BestSellers > ul>li:first-child {
+            margin-left: -107px;
+            margin-right: 2px;
+        }
+        .BestSellers > ul > li:nth-child(3) {
+            margin-left: -107px;
+             margin-right: 2px;
+              }
+
+        .BestSellers > ul > li:last-child {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        .BestSellers > ul > li:nth-child(2) {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .buttonMiddle li {
+            padding-left: 5px;
+            font-size: 14px;
+        }
+        .M-SPORT {
+            padding-left: 25px;
+        }
+        .Resources {
+            padding-left: 25px;
+        }
+        .messenger {
+            padding-left: 25px;
+        }
+        .GiftCertificates {
+            padding-left: 5px;
+        }
+        .Feedback > ul li > img{
+            padding-left: 30px;
+        }
+        .button_strip > img{
+              width: 900px;
+                  
+        }
+ 
+}

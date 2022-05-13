@@ -1,0 +1,44 @@
+﻿var Str="";
+
+Str+="<div class='SExampleHeader' style='line-height: 1.5'>";
+
+Str+='<h4 style="margin: 0">Новые атрибуты элементов ввода</h4>';
+
+Str+='<p style="margin: 0; padding-top: 10px">Атрибут <b>autofocus</b> &mdash; устанавливает фокус ввода на данный элемент формы при открытии веб-страницы.</p>';
+Str+="<div class='SExampleHeader SFont13' style='margin-top: 0'><b>";
+Str+='Поддержка: Chrome, Firefox, Opera, IE 10+';
+Str+="</b></div>";
+
+Str+='<p style="margin: 0; padding-top: 10px">Атрибут <b>spellcheck</b> для элементов ввода текста &mdash; включает или отключает автопроверку орфографии вводимого текста. Может иметь значение "true" либо "false".</p>';
+Str+="<div class='SExampleHeader SFont13' style='margin-top: 0'><b>";
+Str+='Поддержка: Chrome, Firefox, Opera 10.5+, IE 10+';
+Str+="</b></div>";
+
+Str+='<p style="margin: 0; padding-top: 10px">Атрибут <b>autocomplete</b> для элементов ввода текста &mdash; позволяет разрешить или запретить автозаполнение текста в элементе. Может иметь значения "on" (автозаполнение разрешено) либо "off" (автозаполнение запрещено).</p>';
+Str+="<div class='SExampleHeader SFont13' style='margin-top: 0'><b>";
+Str+='Поддержка: Chrome 17+, Firefox, Opera, IE 9+';
+Str+="</b></div>";
+
+Str+='<p style="margin: 0; padding-top: 10px">Атрибут <b>placeholder</b> для элементов ввода текста &mdash; задёт текст, который будет появляться в незаполненом элементе как подсказка о том, что именно нужно вводить в поле.</p>';
+Str+="<div class='SExampleHeader SFont13' style='margin-top: 0'><b>";
+Str+='Поддержка: Chrome, Firefox, Opera 11.5+, IE 10+';
+Str+="</b></div>";
+
+Str+='<p style="margin: 0; padding-top: 10px">Атрибут <b>multiple</b> для элемента выбора файла &lt;input type=file&gt; &mdash; позволяет выбирать сразу несколько файлов для отправки. В некоторых браузерах он также применим к другим элементам формы, например, для &lt;input type=email&gt; позволяет вводить несколько адресов e-mail.</p>';
+Str+="<div class='SExampleHeader SFont13' style='margin-top: 0'><b>";
+Str+='Поддержка: Chrome, Firefox, Opera 10.6+, IE 10+';
+Str+="</b></div>";
+
+Str+='<h4 style="margin: 0; padding-top: 20px">Псевдоклассы CSS, связанные с состоянием элементов форм</h4>';
+
+Str+='<p style="margin: 0; padding-top: 10px">Псевдокласс <b>:enabled</b> &mdash; соответствует доступным элементам формы, т.е. элементам, у которых не указан атрибут disabled.</p>';
+Str+='<p style="margin: 0; padding-top: 10px">Псевдокласс <b>:disabled</b> &mdash; соответствует недоступным элементам формы, т.е. элементам, у которых указан атрибут disabled.</p>';
+Str+='<p style="margin: 0; padding-top: 10px">Псевдокласс <b>:checked</b> &mdash; соответствует установленным (выбранным) элементам формы (применимо к элементам &lt;input type=checkbox&gt; или &lt;input type=radio&gt;).</p>';
+Str+="<div class='SExampleHeader SFont13' style='margin-top: 10px'><b>";
+Str+='Поддержка: Chrome, Firefox, IE 9+';
+Str+="</b></div>";
+
+
+Str+="</div>";
+
+document.write(Str);

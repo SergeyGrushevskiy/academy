@@ -1,0 +1,54 @@
+﻿var Str="";
+
+Str+="<div class='SExampleHeader' style='line-height: 1.5'>";
+
+Str+='<h4 style="margin: 0">Новые теги</h4>';
+Str+='<p style="margin: 0; padding-top: 10px">Тег <b>datalist</b> &mdash; возможность задать для текстового поля формы перечень значений, отображаемых в выпадающем списке. Возможность ввести вручную любое значение остаётся. ';
+Str+='Пример:</p>';
+Str+='<pre style="font-size: 14px; margin-top: 5px; margin-bottom: 5px; margin-left: 20px">';
+Str+='&lt;datalist id=animalslist&gt;<br>';
+Str+='  &lt;option value="собака"&gt;<br>';
+Str+='  &lt;option value="кошка"&gt;<br>';
+Str+='  &lt;option value="попугай"&gt;<br>';
+Str+='&lt;/datalist&gt;<br>';
+Str+='Введите вид животного: &lt;input type=text list=animalslist&gt;';
+Str+='</pre>';
+Str+="<div class='SExampleHeader SFont13' style='margin-top: 0'><b>";
+Str+="Поддержка: Chrome 20+, Firefox, Opera";
+Str+="</b></div>";
+
+Str+='<h4 style="margin: 0; padding-top: 20px">Новые типы элементов ввода</h4>';
+Str+='<p style="margin: 0; padding-top: 10px">&lt;input type=<b>search</b>&gt; &mdash; работает как текстовое поле, но стилизуется под поисковые поля в операционной системе.</p>';
+Str+="<div class='SExampleHeader SFont13' style='margin-top: 0'><b>";
+Str+='Поддержка: Chrome, Firefox, IE 10+';
+Str+="</b></div>";
+
+Str+='<p style="margin: 0; padding-top: 10px">&lt;input type=<b>email</b>&gt;, &lt;input type=<b>url</b>&gt;, &lt;input type=<b>tel</b>&gt; &mdash; работают как текстовые поля, но браузер может более качественно предлагать ранее вводимые значения, проверять корректность введённых данных.</p>';
+Str+="<div class='SExampleHeader SFont13' style='margin-top: 0'><b>";
+Str+='Поддержка: Chrome, Firefox, Opera 10.6+, IE 10+';
+Str+="</b></div>";
+
+Str+='<p style="margin: 0; padding-top: 10px">&lt;input type=<b>range</b>&gt; &mdash; позволяет выбрать некоторое число из диапазона, например, через интерфейс &laquo;ползунок&raquo;.</p>';
+Str+="<div class='SExampleHeader SFont13' style='margin-top: 0'><b>";
+Str+='Поддержка: Chrome, Firefox 23+, Opera, IE 10+';
+Str+="</b></div>";
+
+Str+='<p style="margin: 0; padding-top: 10px">&lt;input type=<b>number</b>&gt; &mdash; позволяет ввести число и управлять им (например, изменять введённое число на единицу в большую и меньшую сторону).</p>';
+Str+="<div class='SExampleHeader SFont13' style='margin-top: 0'><b>";
+Str+='Поддержка: Chrome, Firefox 29+, Opera';
+Str+="</b></div>";
+
+Str+='<p style="margin: 0; padding-top: 10px">&lt;input type=<b>date</b>&gt;, &lt;input type=<b>datetime</b>&gt;, &lt;input type=<b>datetime-local</b>&gt;, &lt;input type=<b>time</b>&gt;, &lt;input type=<b>month</b>&gt; &mdash; позволяют ввести различные компоненты даты и/или времени.</p>';
+Str+="<div class='SExampleHeader SFont13' style='margin-top: 0'><b>";
+Str+='Поддержка: Chrome 20+, Opera';
+Str+="</b></div>";
+
+Str+='<p style="margin: 0; padding-top: 10px">&lt;input type=<b>color</b>&gt; &mdash; позволяет выбрать цвет.</p>';
+Str+="<div class='SExampleHeader SFont13' style='margin-top: 0'><b>";
+Str+='Поддержка: Chrome 20+, Firefox 29+, Opera 11+';
+Str+="</b></div>";
+
+
+Str+="</div>";
+
+document.write(Str);

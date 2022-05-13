@@ -1,0 +1,25 @@
+﻿var Str="";
+
+Str+="<div class='SExampleHeader'>";
+Str+="Если стилевое свойство <b>position</b> элемента равно <b>absolute</b> или <b>fixed</b>, можно также использовать стилевые свойства <b>bottom</b> и <b>right</b>, чтобы задать положение нижней и/или правой грани элемента относительно нижней и/или правой границы контейнера, позиционированного предка, веб-страницы или окна браузера.";
+Str+="</div>";
+
+var ExampleS='Опытный электрик$$$<span style="position: static">никогда</span>$$$не прикасается к женщине сразу двумя руками.';
+var ExampleR='Опытный электрик$$$<span style="position: relative; left: 1mm; top: 1mm">$$$никогда</span>$$$не прикасается к женщине сразу двумя руками.';
+var ExampleR2='Опытный электрик$$$<span style="position: relative; left: -4mm; top: 1mm">$$$никогда</span>$$$не прикасается к женщине сразу двумя руками.';
+Str+=ComposeExamples([{code:ExampleS},{code:ExampleR},{code:ExampleR2}],{leftcolperc:63});
+
+Str+="<div class='SExampleHeader'>";
+Str+="Обычно задаётся или <b>left</b> или <b>right</b>, а также или <b>top</b> или <b>bottom</b>; при одновременном задании <b>left</b> и <b>right</b> задаётся одновременно положение и левой, и правой грани элемента, а следовательно &mdash; его ширина; аналогично с <b>top</b> и <b>bottom</b>.";
+Str+="</div>";
+
+Str+="<br><div class='SExampleDescription'>";
+Str+="При расчёте размера контейнера браузер:<ul style='margin-top: 0'><li>учитывает площадь, занятую дочерними элементами с position: relative, до того как элементы будут смещены;<li>вообще не учитывает площадь, занятую дочерними элементами с position: fixed и position: absolute.</ul>";
+Str+="</div>";
+
+var Example1='<div style="display: inline-block; padding: 2px; border: solid red 1px">$$$  abc<br>$$$  <img src="images/flower.jpg">$$$</div>';
+var Example2='<div style="display: inline-block; padding: 2px; border: solid red 1px">$$$  abc<br>$$$  <img src="images/flower.jpg"$$$    style="position: relative; left: 40px; top: 20px">$$$</div>';
+var Example3='<div style="display: inline-block; padding: 2px; border: solid red 1px;$$$  position: relative">$$$  abc<br>$$$  <img src="images/flower.jpg"$$$    style="position: absolute; left: 80px; top: 1cm">$$$</div>';
+Str+=ComposeExamples([{code:Example1},{code:Example2},{code:Example3}],{leftcolperc:68,leftfontsize:13});
+
+document.write(Str);

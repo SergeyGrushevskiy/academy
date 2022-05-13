@@ -1,0 +1,13 @@
+﻿var Str="";
+
+Str+="<div class='SExampleHeader'>";
+Str+="В случае, когда позиционированные элементы накладываются друг на друга, стилевое свойство <b>z-index</b> позволяет задать, какой элемент ближе к глазам пользователя, а какой&nbsp;&mdash; дальше, т.е. задать порядок наложения элементов друг на друга.<br>По умолчанию <b>z-index</b> всех элементов равен 0.<br>Чем больше значение <b>z-index</b>, тем ближе он к глазам пользователя.";
+Str+="</div>";
+
+var Example1='<img src="images/vorobey.jpg">$$$<img src="images/turtle.jpg">';
+var Example2='<img src="images/vorobey.jpg">$$$<img src="images/turtle.jpg"$$$  style="position: relative; left: -15mm; top: 3mm">$$$$$$$$$$$$$$$';
+var Example3='<img src="images/vorobey.jpg">$$$<img src="images/turtle.jpg"$$$  style="position: relative; left: -15mm; top: 3mm; z-index: -5">$$$$$$$$$$$$$$$';
+Str+=ComposeExamples([{code:Example1},{code:Example2},{code:Example3}],{leftcolperc:63,leftfontsize:13});
+
+
+document.write(Str);

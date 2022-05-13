@@ -1,0 +1,68 @@
+﻿
+var Str="";
+
+
+Str+="<div class='SExampleHeader'>";
+Str+="Парный тег <b>button</b> позволяет расположить на форме такую кнопку, внутри которой можно разместить произвольный HTML-код.";
+Str+="<br>Атрибут <b>type</b> тега <b>button</b> задаёт поведение кнопки:<ul>";
+Str+="<li><b>submit</b> &mdash; отправка формы (т.е. всех элементов и их значений) серверному скрипту.";
+Str+="<li><b>reset</b> &mdash; сброс формы (т.е. значения всех элементов возвращаются к тому состоянию, которое было при открытии формы).";
+Str+="<li><b>button</b> &mdash; кнопка без предзаданного поведения;";
+Str+="</ul>";
+Str+="Атрибут <b>disabled</b> (без значения) запрещает нажатие кнопки.";
+Str+="</div>";
+
+var ExampleT=
+  "<form method=get action='FindBook.php'>$$$"+
+  "  Название книги: <input type='text' name='bookname'><br>$$$"+
+  "  <button type='submit'>$$$"+
+  "    Поиск<br>$$$"+
+  "    <b>начать!</b><br>$$$"+
+  "    <img src='images/smile.gif'>$$$"+
+  "  </button>$$$"+
+  "</form>$$$"+
+  "";
+Str+=ComposeExamples([{code:ExampleT}],{leftcolperc:65,leftfontsize:13,autoquoteattrs:true});
+
+Str+="<div class='SExampleHeader'>";
+Str+="<i>При вводе названия <b>Всё о вёрстке</b> и нажатии кнопки <b>Поиск начать!</b> будет переход на&nbsp;страницу:<br>";
+Str+="<b>FindBook.php?bookname=Всё+о+вёрстке</b></i>";
+Str+="</div>";
+
+Str+="<br><hr>";
+
+Str+="<div class='SExampleHeader'>";
+Str+="Парный тег <b>label</b> позволяет создавать подписи для элементов форм.";
+Str+="<br>Подписи позволяют фокусировать элемент формы при щелчке по подписи<br>либо при нажатию горячей клавиши.";
+Str+="</div>";
+
+Str+="<div class='SExampleHeader'>";
+Str+="<i>Вариант №1 &mdash; элемент формы включается внутрь тега <b>label</b>:</i>";
+Str+="</div>";
+var ExampleT=
+  "<form method=post action='Login.asp'>$$$"+
+  "  <label>Ваше имя:$$$"+
+  "    <input type='text' name='nam'>$$$"+
+  "  </label><br>$$$"+
+  "  <label>Ваша фамилия:$$$"+
+  "    <input type='text' name='fam'>$$$"+
+  "  </label>$$$"+
+  "</form>$$$"+
+  "";
+Str+=ComposeExamples([{code:ExampleT}],{leftcolperc:50,leftfontsize:13,autoquoteattrs:true});
+
+Str+="<div class='SExampleHeader'>";
+Str+="<i>Вариант №2 &mdash; элементу формы задаётся атрибут <b>id</b>, и он же указывается<br>в теге <b>label</b> в атрибуте <b>for</b>:</i>";
+Str+="</div>";
+var ExampleT=
+  "<form method=post action='Login.asp'>$$$"+
+  "  <label for='NNN'>Ваше имя:</label>$$$"+
+  "  <input id='NNN' type='text' name='nam'><br>$$$"+
+  "  <label for='FFF'>Ваша фамилия:</label>$$$"+
+  "  <input id='FFF' type='text' name='fam'>$$$"+
+  "</form>$$$"+
+  "";
+Str+=ComposeExamples([{code:ExampleT}],{leftcolperc:50,leftfontsize:13,autoquoteattrs:true});
+
+document.write(Str);
+

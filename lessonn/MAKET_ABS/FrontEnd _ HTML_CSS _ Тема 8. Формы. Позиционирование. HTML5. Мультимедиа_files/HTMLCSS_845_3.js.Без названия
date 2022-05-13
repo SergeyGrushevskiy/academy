@@ -1,0 +1,33 @@
+﻿var Str="";
+
+Str+="<div class='SExampleHeader' style='line-height: 1.5'>";
+
+
+Str+='<h4 style="margin: 0">Валидация введённых значений</h4>';
+
+Str+='<p style="margin: 0; padding-top: 10px">Атрибут <b>required</b> указывает, что поле обязательно должно быть заполнено.</p>';
+Str+='<p style="margin: 0; padding-top: 10px">Атрибуты <b>min</b> и <b>max</b> для элементов ввода чисел &lt;input type=number&gt; и дат &lt;input type=date&gt; задают соответственно минимальное и максимальное возможное значение, введённое в элемент.</p>';
+Str+='<p style="margin: 0; padding-top: 10px">Атрибут <b>step</b> для элементов ввода чисел &lt;input type=number&gt; задаёт шаг изменения для значения, введённого в элемент.</p>';
+Str+='<p style="margin: 0; padding-top: 10px">Атрибут <b>pattern</b> для элементов ввода текст задаёт регулярное выражение, которому должен соответствовать введённый в элемент текст.</p>';
+Str+='<p style="margin: 0; padding-top: 10px">Установленные атрибутами <b>min</b>, <b>max</b>, <b>step</b>, <b>pattern</b>, <b>required</b> ограничения, а также соответствие введённого значения типу элемента (&lt;input type=number/email/tel...&gt;) автоматически проверяются браузером с выдачей соответствующих предупреждений; неверно заполненная форма не отправляется на сервер.</p>';
+Str+="<div class='SExampleHeader SFont13' style='margin-top: 10px'><b>";
+Str+='Поддержка: Chrome, Firefox, IE 10+';
+Str+="</b></div>";
+
+Str+='<h4 style="margin: 0; padding-top: 20px">Псевдоклассы CSS, связанные с валидацией</h4>';
+
+Str+='<p style="margin: 0; padding-top: 10px">Псевдокласс <b>:required</b> &mdash; соответствует элементам формы с атрибутом required, т.е. обязательным для заполнения.</p>';
+Str+='<p style="margin: 0; padding-top: 10px">Псевдокласс <b>:optional</b> &mdash; соответствует элементам формы без атрибута required, т.е. необязательным для заполнения.</p>';
+Str+='<p style="margin: 0; padding-top: 10px">Псевдокласс <b>:valid</b> &mdash; соответствует элементам формы с допустимыми значениями.</p>';
+Str+='<p style="margin: 0; padding-top: 10px">Псевдокласс <b>:invalid</b> &mdash; соответствует элементам формы с недопустимыми значениями.</p>';
+Str+='<p style="margin: 0; padding-top: 10px">Псевдокласс <b>:in-range</b> &mdash; соответствует элементам ввода чисел, содержащим число в допустимом диапазоне.</p>';
+Str+='<p style="margin: 0; padding-top: 10px">Псевдокласс <b>:out-of-range</b> &mdash; соответствует элементам ввода чисел, содержащим число вне допустимого диапазона.</p>';
+Str+='<p style="margin: 0; padding-top: 10px"><b>ВНИМАНИЕ:</b> Валидация введённых в элементы форм значений обычно происходит только в момент отправки формы на сервер, соответственно псевдоклассы :valid, :invalid, :in-range, :out-of-range применяются к элементам формы только в этот момент.</p>';
+Str+="<div class='SExampleHeader SFont13' style='margin-top: 10px'><b>";
+Str+='Поддержка: Chrome, Firefox, IE 10+';
+Str+="</b></div>";
+
+
+Str+="</div>";
+
+document.write(Str);

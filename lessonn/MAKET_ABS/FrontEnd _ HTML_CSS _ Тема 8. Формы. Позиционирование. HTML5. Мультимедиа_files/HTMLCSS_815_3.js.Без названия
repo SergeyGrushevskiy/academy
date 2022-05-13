@@ -1,0 +1,65 @@
+﻿var Str="";
+
+
+var ExampleT=
+  "<form method=get action='Search.php'>$$$"+
+  "  Какую машину ищете:<br>$$$"+
+  "  <input type='text' name='carmodel'><br>$$$"+
+  "  Только новые:$$$"+
+  "  <input type='checkbox' name='onlynew' checked><br>$$$"+
+  "  <input type='submit' value='Поиск'>$$$"+
+  "</form>$$$"+
+  "";
+Str+=ComposeExamples([{code:ExampleT}],{leftcolperc:60,leftfontsize:13,autoquoteattrs:true});
+
+Str+="<div class='SExampleHeader'>";
+Str+="<i>При вводе машины <b>Жигули</b>, <b>установке</b> птички &laquo;Только новые&raquo;<br>и нажатии кнопки <b>Поиск</b> будет переход на страницу:<br>";
+Str+="<b>Search.php?carmodel=Жигули&onlynew=on</b></i>";
+Str+="<br><br><i>При вводе машины <b>Mercedes</b>, <b>сбросе</b> птички &laquo;только новые&raquo;<br>и нажатии кнопки <b>Поиск</b> будет переход на страницу:<br>";
+Str+="<b>Search.php?carmodel=Mercedes</b></i>";
+Str+="</div>";
+
+var ExampleR=
+  "<form method=post action='Vote.jsp'>$$$"+
+  "  Проголосуйте:<br>$$$"+
+  "  <input type='radio' name='answer' value=1>да<br>$$$"+
+  "  <input type='radio' name='answer' value=2 checked>нет<br>$$$"+
+  "  <input type='radio' name='answer' value=3>воздержался<br>$$$"+
+  "  <input type='hidden' name='votenum' value='111'>$$$"+
+  "  <input type='submit' value='Голосовать!'>$$$"+
+  "</form>$$$"+
+  "";
+Str+=ComposeExamples([{code:ExampleR}],{leftcolperc:67,leftfontsize:13,autoquoteattrs:true});
+
+
+Str+="<div class='SExampleHeader'>";
+Str+="<i>При вводе ответа <b>воздержался</b> и нажатии кнопки <b>Голосовать!</b> будет переход на страницу:<br>";
+Str+="<b>Vote.jsp</b><br>";
+Str+="и в запросе к странице также будут переданы значения:<br>";
+Str+="<b>answer=3<br>votenum=111</b></i>";
+Str+="</div>";
+
+
+var ExampleC=
+  "<form method=post enctype='multipart/form-data'$$$"+
+  "   action='Fot.asp'>$$$"+
+  "  Фото:<br>$$$  <input type='file' name='myphoto'><br>$$$"+
+  "  <input type='text' name='comment'$$$    style='width: 200px' placeholder='коммент к фото'>$$$  <br>$$$"+
+  "  Ваш пароль: <input type='password' name='pass'>$$$"+
+  "  <input type='submit' value='Опубликовать'>$$$"+
+  "</form>$$$"+
+  "";
+Str+=ComposeExamples([{code:ExampleC}],{leftcolperc:58,leftfontsize:13,autoquoteattrs:true});
+
+Str+="<div class='SExampleHeader'>";
+Str+="<i>При выборе файла с фото, комментария <b>а теперь волна накрыла меня ТАК</b>,<br>пароля <b>qwerty</b> и нажатии кнопки <b>Опубликовать</b> будет переход на страницу:<br>";
+Str+="<b>Fot.asp</b><br>";
+Str+="и в запросе к странице также будут переданы значения:<br>";
+Str+="<b>myphoto=(содержимое файла с фотографией)</b><br>";
+Str+="<b>comment=а теперь волна накрыла меня ТАК</b><br>";
+Str+="<b>pass=qwerty</b>";
+Str+="</i>";
+Str+="</div>";
+
+
+document.write(Str);

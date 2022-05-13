@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+ body{
+     overflow-x: hidden;
+ }
 .clearfix::after{content:"";display: block; clear: both;}
 .clear{
       clear:both;

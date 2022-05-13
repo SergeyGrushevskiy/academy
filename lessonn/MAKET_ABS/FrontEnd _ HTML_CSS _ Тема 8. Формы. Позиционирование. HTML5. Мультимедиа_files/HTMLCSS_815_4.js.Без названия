@@ -1,0 +1,62 @@
+﻿var Str="";
+
+
+Str+="<div class='SExampleHeader'>";
+Str+="Парный тег <b>textarea</b> внутри тега <b>form</b> &mdash; элемент формы, позволяющий вводить многострочный текст. Содержимое тега <b>textarea</b> задаёт начальное значение текста.";
+Str+="<br>Атрибуты <b>disabled</b>, <b>readonly</b>, <b>maxlength</b>, <b>placeholder</b> работают аналогично элементу &lt;input type=text&gt;.";
+Str+="</div>";
+
+var ExampleT=
+  "<form method=post action='Reply.php'>$$$"+
+  "  Имя: <input type='text' name='myname' value='Толик'><br>$$$"+
+  "  Вы уже большой?$$$  <input type='checkbox' name='big' value='YES'><br>$$$"+
+  "  Ответ:<br>$$$  <textarea name='mytext'>Я считаю, что...</textarea><br>$$$"+
+  "  <input type='submit' value='Отправить'>$$$"+
+  "</form>$$$"+
+  "";
+Str+=ComposeExamples([{code:ExampleT}],{leftcolperc:63,leftfontsize:13,autoquoteattrs:true});
+
+Str+="<div class='SExampleHeader'>";
+Str+="<i>При вводе имени <b>Аноним</b>, установке птички &laquo;большой&raquo; и вводе ответа <b>Всё это маловероятно</b> и нажатии кнопки <b>Отправить</b> будет переход на страницу:<br>";
+Str+="<b>Reply.php</b><br>";
+Str+="и в запросе к странице также будут переданы значения:<br>";
+Str+="<b>myname=Аноним<br>big=YES<br>mytext=Всё это маловероятно</b></i>";
+Str+="</div>";
+
+
+Str+="<hr style='margin: 20px 0 20px 0'>"
+
+
+Str+="<div class='SExampleHeader'>";
+Str+="Парный тег <b>select</b> внутри тега <b>form</b> &mdash; выпадающий список. Должен содержать элементы <b>option</b> и, при необходимости, <b>optgroup</b>.";
+Str+="<br>Атрибут <b>multiple</b> (без значения) позволяет пользователю выбирать сразу несколько позиций из списка; при этом список перестаёт быть выпадающим.";
+Str+="<br>Атрибут <b>size</b> позволяет установить количество отображаемых в списке строк, если список невыпадающий (т.е. при наличии атрибута multiple).";
+Str+="</div>";
+
+Str+="<div class='SExampleHeader'>";
+Str+="Парный тег <b>option</b> внутри тега <b>select</b> &mdash; один из элементов выпадающего списка. Содержимое тега <b>option</b> и будет текстом в выпадающем списке.";
+Str+="<br>Атрибут <b>value</b> задаёт значение, которое получит элемент при выборе данной строки в выпадающем списке.";
+Str+="<br>Атрибут <b>disabled</b> (без значения) делает элемент списка недоступным для выбора.";
+Str+="</div>";
+
+var ExampleT=
+  "<form method=get action='FindAnimal.php'>$$$"+
+  "  Имя вашего домашнего питомца:<br>$$$  <input type='text' name='animalname'><br>$$$"+
+  "  Что за животное:<br>$$$"+
+  "  <select name='animalkind'>$$$"+
+  "    <option value=7>кошка</option>$$$"+
+  "    <option value=5>собака</option>$$$"+
+  "    <option value=8 selected>попугай</option>$$$"+
+  "    <option value=9 disabled>тушкан</option>$$$"+
+  "  </select><br>$$$"+
+  "  <input type='submit' value='Найти!'>$$$"+
+  "</form>$$$"+
+  "";
+Str+=ComposeExamples([{code:ExampleT}],{leftcolperc:60,leftfontsize:13,autoquoteattrs:true});
+
+Str+="<div class='SExampleHeader'>";
+Str+="<i>При вводе имени <b>Портусик</b>, животного <b>собака</b> и нажатии кнопки <b>Найти!</b> будет переход на страницу:<br><b>FindAnimal.php?animalname=Портусик&animalkind=5</b></i>";
+Str+="</div>";
+
+
+document.write(Str);

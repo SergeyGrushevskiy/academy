@@ -1,0 +1,28 @@
+﻿
+var Str="";
+
+
+Str+="<div class='SExampleHeader'>";
+Str+="Парный тег <b>fieldset</b> позволяет визуально оформить в виде блока несколько взаимосвязанных полей формы.<br>";
+Str+="Парный тег <b>legend</b>, находящийся внутри тега <b>fieldset</b>, позволяет задать заголовок для этого блока.";
+Str+="</div>";
+
+var ExampleT=
+  "<form method=post action='AddAnketa.php'>$$$$$$"+
+  "  <fieldset>$$$"+
+  "    <legend>Паспортные данные</legend>$$$"+
+  "    <label>Ваша фамилия:<br>$$$      <input type=text name='fam' value='Иванов'>$$$    </label><br>$$$"+
+  "    <label>Ваше имя:<br>$$$      <input type=text name='im' value='Иван' disabled>$$$    </label><br>$$$"+
+  "  </fieldset>$$$$$$"+
+  "  <fieldset style='border: double red 3px'>$$$"+
+  "    <legend style='font-style: italic'>Контакты</legend>$$$"+
+  "    <label>Телефон:<br>$$$      <input type=text name='tel' maxlength=10>$$$    </label><br>$$$"+
+  "    <label>E-mail:<br>$$$      <input type=text name='email' value='iv@mail.ru'>$$$    </label><br>$$$"+
+  "    <label>Skype:<br>$$$      <input type=text name='skype' value='ivanov.i' readonly>$$$    </label><br>$$$"+
+  "  </fieldset>$$$$$$"+
+  "</form>$$$"+
+  "";
+Str+=ComposeExamples([{code:ExampleT}],{leftcolperc:65,leftfontsize:13,autoquoteattrs:true});
+
+document.write(Str);
+

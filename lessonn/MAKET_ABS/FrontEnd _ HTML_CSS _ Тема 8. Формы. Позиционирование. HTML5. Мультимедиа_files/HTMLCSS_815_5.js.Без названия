@@ -1,0 +1,52 @@
+﻿var Str="";
+
+
+Str+="<div class='SExampleHeader'>";
+Str+="Атрибут <b>size</b> тега <b>select</b> (если значение атрибута больше чем 1) превращает список из выпадающего в прокручивающийся.<br>Список будет иметь такую высоту, чтобы вместить указанное количество элементов.";
+Str+="</div>";
+
+var ExampleT=
+  "<form method=get action='FindAnimal.php'>$$$"+
+  "  Что за животное:<br>$$$"+
+  "  <select name='animalkind' size=3>$$$"+
+  "    <option value=7>кошка</option>$$$"+
+  "    <option value=5 selected>собака</option>$$$"+
+  "    <option value=8>попугай</option>$$$"+
+  "    <option value=9>тушкан</option>$$$"+
+  "  </select><br>$$$"+
+  "  <input type='submit' value='Найти!'>$$$"+
+  "</form>$$$"+
+  "";
+Str+=ComposeExamples([{code:ExampleT}],{leftcolperc:60,leftfontsize:13,autoquoteattrs:true});
+
+Str+="<div class='SExampleHeader'>";
+Str+="<i>При выборе животного <b>кошка</b> и нажатии кнопки <b>Найти!</b> будет переход на&nbsp;страницу:<br><b>FindAnimal.php?animalkind=7</b></i>";
+Str+="</div>";
+
+
+Str+="<br><div class='SExampleHeader'>";
+Str+="Атрибут <b>multiple</b> (без значения) тега <b>select</b> также превращает список из выпадающего в прокручивающийся и позволяет выбирать сразу несколько элементов списка.<br>Если не задан ещё и атрибут <b>size</b>, список будет иметь достаточную высоту, чтобы вместить все элементы.";
+Str+="</div>";
+
+var ExampleT=
+  "<form method=get action='FindAnimal.php'>$$$"+
+  "  Что за животное:<br>$$$"+
+  "  <select name='animalkind' multiple>$$$"+
+  "    <option value=7>кошка</option>$$$"+
+  "    <option value=5 selected>собака</option>$$$"+
+  "    <option value=8>попугай</option>$$$"+
+  "    <option value=9 selected>тушкан</option>$$$"+
+  "  </select><br>$$$"+
+  "  <input type='submit' value='Найти!'>$$$"+
+  "</form>$$$"+
+  "";
+Str+=ComposeExamples([{code:ExampleT}],{leftcolperc:60,leftfontsize:13,autoquoteattrs:true});
+
+Str+="<div class='SExampleHeader'>";
+Str+="<i>При выборе животных <b>кошка</b> и <b>собака</b> и нажатии кнопки <b>Найти!</b> будет переход на&nbsp;страницу:<br><b>FindAnimal.php?animalkind=5&animalkind=7</b></i>";
+Str+="</div>";
+
+
+
+
+document.write(Str);
