@@ -1,13 +1,13 @@
 
 div.Back{
-  background: url(/lesson5/file/Football0.png) repeat-y;
+  background: url('Football0.png') repeat-y;
   
   overflow: hidden;
 }
 
 div.Ball{
  
-  background: url(/lesson5/file/ball3.png) top right repeat-y;
+  background: url('file/ball3.png') top right repeat-y;
   overflow: hidden;
 }
 
