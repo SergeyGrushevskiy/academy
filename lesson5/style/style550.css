@@ -6,7 +6,7 @@
     div.Back, div.header, div.footer, div.Menu, div.Ball, div.content {
       width: 500px;
     }
-    
+ 
     
     div.Menu{
     height: 260px;
@@ -29,5 +29,15 @@
     img.position{
       margin-left: 10px
     }
-    
+    div.block {
+      width: 91px;
+      height: 56px;
+      background-color: rgb(22, 209, 47);
+      position: fixed;
+      top: 50px;
+      right: 40px;
+      font-size: 14px;
+      text-align: center;
+      border: 1px solid red;
     }
+  }

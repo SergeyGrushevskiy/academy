@@ -6,12 +6,23 @@
     div.Back, div.header, div.footer, div.Menu, div.Ball, div.content {
       width: 320px;
     }
-  
+    div.header {
+    
+      position: relative;
+    }
     div.Menu{
       padding-left: 70px;
       padding-bottom: 5px;
       float: none;
       background: url(../file/Football1.png);
       }
-      
+      div.block {
+        width: 74px;
+        height: 50px;
+        background-color: rgb(22, 209, 47);
+        position: fixed;
+        top: 62px;
+        right: 30px;
+        border: 1px solid red;
+    }
   }
