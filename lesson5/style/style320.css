@@ -1,0 +1,17 @@
+@media all and (max-width: 350px) {
+    * {
+        box-sizing: border-box;
+    }
+  
+    div.Back, div.header, div.footer, div.Menu, div.Ball, div.content {
+      width: 320px;
+    }
+  
+    div.Menu{
+      padding-left: 70px;
+      padding-bottom: 5px;
+      float: none;
+      background: url(/lesson5/file/Football1.png);
+      }
+      
+  }
