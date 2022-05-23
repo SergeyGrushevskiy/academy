@@ -1,0 +1,52 @@
+@media all and (max-width: 350px) {
+  * {
+      box-sizing: border-box;
+  }
+
+  div.Back, div.header, div.footer, div.Menu, div.fadeBall, div.content {
+    width: 320px;
+  }
+
+  div.Back{
+    flex-direction: row;
+  }
+
+  img.position{
+    width: 100%;
+    height:auto;
+    padding: 0px; 
+    margin-right: 5px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    float: none;
+  }
+
+  div.Menu{
+    order: 2;
+    padding-left: 0px;
+    padding-bottom: 5px;
+    float: none;
+    background-color: white;
+    height: auto;
+    margin-bottom: 20px;
+    }
+
+  ol.disc{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  ol.disc li{
+      list-style-type: none;
+      float: left;
+      margin-right: 10px;
+    }
+    
+  div.row{
+    order: 1;
+  }
+
+  div.content{
+    margin-bottom: 0px;
+  }
+}

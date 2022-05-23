@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+  body{
+      overflow-x: hidden;
+  }
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+  .conteiner {
+    width: 1140px;
+    margin: 0 auto;
+    background-color: black;
+  }
+  .header{
+      height: 100px;
+  }
+  .minsk{
+     font-size: 30px; 
+     background-color: #FFFFFF ;
+     text-align:center; 
+     border-radius:20px;
+  }
+  .conteiner>ul{
+      display: flex;
+  }
+  .conteiner>ul>li{
+      color:#FFFFFF
+  }
+
+

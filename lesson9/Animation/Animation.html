@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    
+<style>
+    .sprite-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sprite-image {
+    height: 123px;
+    width: 70px;
+    background: url(/lesson9/Animation/smur-sprite.png) 0px 0px;
+    animation: play 0.8s steps(16) infinite,
+        step 10s linear infinite;
+    position: absolute;
+    left: 0;
+  }
+  .sprite-image2 {
+    height: 316px;
+    width: 173px;
+    background: url(/lesson9/Animation/men1.png) 0px 0px;
+    animation: men 1s steps(8) infinite,
+        step 13s linear infinite;
+    position: absolute;
+    left: 0px;
+    margin-top: -160px;
+  }
+
+@keyframes play {
+    100% {
+        background-position: -1135px;
+    }
+}
+@keyframes men {
+    100% {
+        background-position: -1472px;
+    }
+}
+
+@keyframes step {
+    100% {
+        left: 100%;
+    }
+    
+}
+
+      </style>
+    
+ 
+</head>
+<body>
+     <div class="sprite-container">
+        <div class="sprite-image"></div><br><br>
+        <div class="sprite-image2"></div>
+    </div>
+</body>
+</html>

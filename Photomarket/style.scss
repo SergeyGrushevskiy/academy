@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear{
+      clear:both;
+}
+.headerTop {
+    background: #000000;
+  }
+   
+@mixin bth($w,$h,$bgColor,$color) {
+    width: $w;
+    height: $h;
+    background-color: $bgColor;
+    color: $color;
+}
+@mixin media ($w1170px) {
+     @media all and (max-width: 1170px) {
+         .conteiner{
+         width: 770px;
+     }
+        .conteiner {
+            width: 1140px;
+            margin: 0 auto;
+            display: flex;
+          }
+          .cla{
+              background-color: aqua;
+          }
+    
+}
+.bth1{
+    @include bth(200);
+    @include media(100px){
+        
+    }
+
+}
+}
+
+

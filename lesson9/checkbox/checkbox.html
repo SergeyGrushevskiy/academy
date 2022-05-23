@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox</title>
+    <style>
+        * {
+        user-select: none;
+       }
+       body{
+         margin-left: 50px;
+       }
+     
+       [type="checkbox"]{
+         display: none;
+       }
+     
+       input + label{
+         background: url(/lesson9/checkbox/checkbox.jpg) no-repeat -27px -1px;
+         background-size: 58px;
+         width: 30px;
+         height: 23px;
+         display: inline-block;
+       }
+     
+       input:checked + label{
+         background-position: -1px -1px;
+       }
+      
+     </style>
+</head>
+<body>
+  <br><br>
+        <form action="https://fe.it-academy.by/TestForm.php">
+          <input type="checkbox" id="check" name="test">
+          <label for="check"></label>
+          <button type="submit">button</button>
+        </form>
+      
+      
+</body>
+</html>

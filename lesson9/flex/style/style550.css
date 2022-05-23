@@ -1,0 +1,37 @@
+@media all and (max-width: 546px) {
+  * {
+      box-sizing: border-box;
+  }
+   
+  div.Back, div.Menu, div.content, div.header, div.footer {
+    width: 500px;
+  }
+  
+  div.Back{
+    flex-wrap: wrap;
+  }
+  
+  div.Menu{
+  height: 260px;
+  padding-top: 1px;
+  margin-right: 0px;
+  padding-left: 150px;
+  padding-bottom: 5px;
+  background-color: #EEDD82;
+  }
+  
+  div.content{
+    margin: 0px; 
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+  
+  div.Back{
+    background: none;
+  }
+  
+  img.position{
+    margin-left: 10px
+  }
+  
+  }
