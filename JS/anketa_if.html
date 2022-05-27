@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anketa_if</title>
+</head>
+<body>
+    <script>
+  
+    var surname = prompt("Какая у тебя фамилия? ");
+    var name = prompt("Как тебя зовут? ");
+    var patronymic = prompt("Какое у  тебя отчество? ");
+    var ageStr = prompt('Введите ваш возраст в годах:');
+      while ( true ) {
+        var age=parseInt(ageStr);
+              if ( !isNaN(ageStr) )
+               break; // введено корректное число - выходим из цикла
+            ageStr=prompt('Введите ваш возраст корректно:');
+    }
+    var ageDays= ageStr * 365;
+    var after5= ageStr + 5;
+    var gender = confirm("Ваш пол мужской? ");
+
+  if (age > 63 && gender===true) {
+    result = ('Ваше ФИО: '+ surname  + name + ' ' + patronymic + '\n' + 'Ваш возраст в годах: ' + ageStr + '\n' + 'Ваш возраст в днях: ' + ageDays + '\n' + 'через 5 лет вам будет: ' + after5 + '\n' + 'Ваш пол: мужской \n' + 'Вы на пенсии: да');
+  }
+  else if (age < 63 && gender===true) {
+    result = ('Ваше ФИО: '+ surname + ' ' + name + ' ' + patronymic + '\n' + 'Ваш возраст в годах: ' + ageStr + '\n' + 'Ваш возраст в днях: ' + ageDays + '\n' + 'через 5 лет вам будет: ' + after5 + '\n' + 'Ваш пол: мужской \n' + 'Вы на пенсии: нет');
+  }
+  else if (age > 58 && gender===false) {
+    result= ('Ваше ФИО: '+ surname + ' ' + name + ' ' + patronymic + '\n' + 'Ваш возраст в годах: ' + ageStr + '\n' + 'Ваш возраст в днях: ' + ageDays + '\n' + 'через 5 лет вам будет: ' + after5 + '\n' + 'Ваш пол: женский \n' + 'Вы на пенсии: да');
+  }
+  else if (age < 58 && gender===false) {
+    result = ('Ваше ФИО: '+ surname + ' ' + name + ' ' + patronymic + '\n' + 'Ваш возраст в годах: ' + ageStr + '\n' + 'Ваш возраст в днях: ' + ageDays + '\n' + 'через 5 лет вам будет: ' + after5 + '\n' + 'Ваш пол: женский \n' + 'Вы на пенсии: нет');
+  }
+  alert (result);
+</script>
+
+</body>
+</html>
