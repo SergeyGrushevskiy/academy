@@ -1,0 +1,95 @@
+@import 'variables';
+@mixin btn ($w:220px, $bg:$orange){
+    width: $w;
+    color: $orange;
+    background: transparent;
+    height: 46px;
+    left: 172px;
+    top: 200px;
+    
+    border: 2px solid $orange;
+    border-radius: 28px;
+    
+    
+}
+
+@mixin btn1($w, $clr, $brdr, $tc) {
+    width: $w;
+    height: 24px;
+    background: $clr;
+    border-radius: 15px;
+    border: $brdr;
+    font-weight: 400;
+    font-size: $fz12;
+    line-height: 16px;
+    color: $tc;
+    
+  }
+  
+  @mixin btn2($w, $clr, $brdr, $tc) {
+    width: $w;
+    height: 50px;
+    background: $clr;
+    border-radius: 8px;
+    border: $brdr;
+    font-weight: 600;
+    font-size: $fz14;
+    line-height: 19px;
+    color: $tc;
+  }
+  
+  @mixin btnMobile($w, $clr, $brdr, $tc) {
+    width: $w;
+    height: 32px;
+    background: $clr;
+    border-radius: 8px;
+    border: $brdr;
+    font-weight: 500;
+    font-size: $fz10;
+    line-height: 14px;
+    color: $tc;
+  }
+  
+  @mixin btnCardMobile($w, $clr, $brdr, $tc) {
+    width: $w;
+    height: 40px;
+    background: $clr;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: $brdr;
+    font-weight: 700;
+    font-size: $fz12;
+    line-height: 16px;
+    color: $tc;
+  }
+  
+  @mixin btnCardMobile1($w, $clr, $brdr, $tc) {
+    width: $w;
+    height: 40px;
+    background: $clr;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: $brdr;
+    font-weight: 600;
+    font-size: $fz14;
+    line-height: 19px;
+    color: $tc;
+  }
+  
+  @mixin btnBigCardMobile($w, $clr, $brdr, $tc) {
+    width: $w;
+    height: 37.45px;
+    background: $clr;
+    border-radius: 8px;
+    border: $brdr;
+    font-weight: 600;
+    font-size: $fz12;
+    line-height: 16px;
+    color: $tc;
+  }
+  
+  @mixin onlySmoller($w) {
+    @media (max-width: $w) {
+      @content;
+    }
+  }
