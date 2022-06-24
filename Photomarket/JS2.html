@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTRIES</title>
+</head>
+<body>
+    <input type="button" value="Ввод информации о стране" onclick='addCountry(prompt("Введите название страны"), prompt("Введите название её столицы"))'>
+    <input type="button" value="Получение информации о стране" onclick='console.log(getCountryInfo(prompt("Введите название искомой страны")))'>
+    <input type="button" value="Перечень всех стран" onclick='console.log( "список стран:" + listCountrys());'>
+    <input type="button" value="Удаление информации о стране" onclick='deleteCountry((prompt("Введите название  страны")))'>
+    <script type="text/javascript" src="JavaS2.js"></script>
+</body>
+</html>
